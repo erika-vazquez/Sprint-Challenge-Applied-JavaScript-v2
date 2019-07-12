@@ -23,6 +23,10 @@ title.classList.add('header')
 date.classList.add('date') 
 temp.classList.add('temp')
 
+// set text content
+title.textContent = 'Lambda Times'
+date.textContent = 'SMARCH 28, 2019'
+temp.textContent = '98 deg'
 
 
 }
