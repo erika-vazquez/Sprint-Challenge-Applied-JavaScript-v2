@@ -8,11 +8,11 @@
 //    <span class="temp">98°</span>
 //  </div >
 // And add it to the DOM in the .headerContainer component
-const headerData = {hdrDate: 'SMARCH 28, 2019', hdrTitle:'Lambda Times',hdrTemp:'98'} //object
+const headerData = {hdrDate: 'SMARCH 28, 2019', hdrTitle:'Lambda Times',hdrTemp:'98°'} //object
 
 const header = document.querySelector('.header-container')//DOM manipulation
    header.appendChild(Header(headerData.hdrDate, headerData.hdrTitle, headerData.hdrTemp))
-   //test -> console.log(headerData.hdrDate)
+   //test ->console.log(headerData.hdrDate)
   
 
 function Header(lambDate, lambTitle, lambTemp) {
@@ -22,7 +22,7 @@ const date = document.createElement('span')
 const title = document.createElement('h1')
 const temp = document.createElement('span')
 
- // Setup structure of the elements; put together
+ // Setup structure of the elements
  headerC.appendChild(date)
  headerC.appendChild(title)
  headerC.appendChild(temp)
