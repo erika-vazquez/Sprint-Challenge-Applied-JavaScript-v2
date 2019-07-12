@@ -24,7 +24,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         // grabbing the data. Each of these is an array of article objects
         const bp = data.data.articles.bootstrap;
         const js = data.data.articles.javascript;
-        const jq = data.data.articles.jquery;
+        const jquery = data.data.articles.jquery;
         const node = data.data.articles.node;
         const tech = data.data.articles.technology;
 
@@ -33,7 +33,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
             cardsContainer.appendChild(createCard(article.headline, article.authorPhoto, article.authorName))})
         js.forEach(article => {
             cardsContainer.appendChild(createCard(article.headline, article.authorPhoto, article.authorName))})
-        jq.forEach(article => {
+        jquery.forEach(article => {
             cardsContainer.appendChild(createCard(article.headline, article.authorPhoto, article.authorName))})
         node.forEach(article => {
             cardsContainer.appendChild(createCard(article.headline, article.authorPhoto, article.authorName))})
