@@ -18,9 +18,9 @@ const title = document.createElement('h1')
 const temp = document.createElement('span')
 
 // set the styles
-headerC.classList.add('headerC')
-date.classList.add('headerC') 
-title.classList.add('title')
+headerC.classList.add('header')
+title.classList.add('header')
+date.classList.add('date') 
 temp.classList.add('temp')
 
 
