@@ -8,7 +8,7 @@
 //    <span class="temp">98°</span>
 //  </div >
 // And add it to the DOM in the .headerContainer component
-const header = document.querySelector('.header')
+const header = document.querySelector('.header-component')
 
 function Header(hdr, lambDate, lambTitle, lambTemp) {
 // create the elements
@@ -17,7 +17,13 @@ const date = document.createElement('span')
 const title = document.createElement('h1')
 const temp = document.createElement('span')
 
-// set the styles
+ // Setup structure of the elements
+ headerC.appendChild(date)
+ headerC.appendChild(title)
+ headerC.appendChild(temp)
+
+
+// set the classnames
 headerC.classList.add('header')
 title.classList.add('header')
 date.classList.add('date') 
